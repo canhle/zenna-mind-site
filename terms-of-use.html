@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use — Zenna Mind</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green-deep: #1f8a82;
+      --green-mid: #2AADA4;
+      --green-light: #e6f7f6;
+      --cream: #f6fafa;
+      --ink: #1a1a1a;
+      --ink-soft: #4a4a4a;
+      --ink-muted: #888;
+      --border: #c8e8e6;
+      --warning-bg: #fff8ed;
+      --warning-border: #f5a623;
+      --warning-text: #7a4f00;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.75;
+    }
+
+    /* Header */
+    header {
+      background: var(--green-deep);
+      padding: 56px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 60% 0%, rgba(42,173,164,0.4) 0%, transparent 70%);
+    }
+
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #fff;
+      font-weight: 400;
+      position: relative;
+    }
+
+    header h1 em {
+      font-style: italic;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .meta {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.04em;
+      position: relative;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    /* Intro box */
+    .intro {
+      background: var(--green-light);
+      border-left: 3px solid var(--green-deep);
+      border-radius: 4px;
+      padding: 24px 28px;
+      margin-bottom: 56px;
+      font-size: 0.97rem;
+      color: var(--ink-soft);
+    }
+
+    /* Warning box — for medical disclaimer */
+    .warning-box {
+      background: var(--warning-bg);
+      border-left: 3px solid var(--warning-border);
+      border-radius: 4px;
+      padding: 24px 28px;
+      margin: 20px 0 0;
+    }
+
+    .warning-box p {
+      color: var(--warning-text);
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    .warning-box p:last-child { margin-bottom: 0; }
+
+    .warning-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      color: var(--warning-border);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    /* Section */
+    section {
+      margin-bottom: 52px;
+    }
+
+    .section-number {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 0.97rem;
+      color: var(--ink-soft);
+      margin-bottom: 14px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    /* List */
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin: 12px 0;
+    }
+
+    ul li {
+      font-size: 0.97rem;
+      color: var(--ink-soft);
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--green-mid);
+      font-size: 0.85rem;
+    }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 52px 0;
+    }
+
+    /* Contact box */
+    .contact-box {
+      background: var(--green-deep);
+      border-radius: 8px;
+      padding: 32px 36px;
+      color: #fff;
+    }
+
+    .contact-box h2 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+    }
+
+    .contact-box a {
+      color: #fff;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.8rem;
+      color: var(--ink-muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Zenna Mind</div>
+  <h1>Terms <em>of Use</em></h1>
+  <p class="meta">Effective Date: May 3, 2026 &nbsp;·&nbsp; Last Updated: May 3, 2026</p>
+</header>
+
+<div class="container">
+
+  <div class="intro">
+    By downloading or using the Zenna Mind app, you agree to these Terms of Use. Please read them carefully. If you do not agree, please do not use the app.
+  </div>
+
+  <!-- 1 -->
+  <section>
+    <div class="section-number">01</div>
+    <h2>About Zenna Mind</h2>
+    <p>Zenna Mind is a meditation and mindfulness support application designed to help users build healthy habits, reduce everyday stress, and improve overall quality of life through guided meditation sessions and breathing exercises.</p>
+    <p>Zenna Mind is available to users aged <strong>13 and older</strong>.</p>
+  </section>
+
+  <!-- 2 — Medical Disclaimer, most important section -->
+  <section>
+    <div class="section-number">02</div>
+    <h2>Not a Medical Application</h2>
+    <p>Zenna Mind is a <strong>wellness and lifestyle support app only</strong>. It is not a medical device, medical service, or mental health treatment platform.</p>
+
+    <div class="warning-box">
+      <div class="warning-label">Important Notice</div>
+      <p>The content provided in Zenna Mind — including guided meditations, breathing exercises, and relaxation sessions — is intended for general wellness purposes only. It does <strong>not</strong> constitute medical advice, diagnosis, or treatment, and makes no claims of treating, curing, or improving any health condition.</p>
+      <p>If you are experiencing serious or persistent health concerns such as chronic insomnia, severe stress, depression, or anxiety disorders, we strongly encourage you to consult a qualified medical doctor or licensed mental health professional. Zenna Mind is not a substitute for professional medical care.</p>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <div class="section-number">03</div>
+    <h2>Acceptable Use</h2>
+    <p>By using Zenna Mind, you agree to:</p>
+    <ul>
+      <li>Use the app for personal, non-commercial purposes only</li>
+      <li>Not copy, reproduce, distribute, or resell any content from the app</li>
+      <li>Not attempt to reverse-engineer, modify, or tamper with the app</li>
+      <li>Not use the app in any way that violates applicable laws or regulations</li>
+    </ul>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <div class="section-number">04</div>
+    <h2>Intellectual Property</h2>
+    <p>All content within Zenna Mind — including audio recordings, guided sessions, images, text, and design — is the property of Zenna Mind and is protected by applicable intellectual property laws. You may not use, copy, or distribute any content without prior written permission.</p>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <div class="section-number">05</div>
+    <h2>Disclaimer of Warranties</h2>
+    <p>Zenna Mind is provided "as is" without warranties of any kind. We do not guarantee that the app will be uninterrupted, error-free, or that it will meet your specific expectations or requirements.</p>
+    <p>We reserve the right to modify, suspend, or discontinue any part of the app at any time without prior notice.</p>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <div class="section-number">06</div>
+    <h2>Limitation of Liability</h2>
+    <p>To the fullest extent permitted by law, Zenna Mind and its developers shall not be liable for any indirect, incidental, or consequential damages arising from your use of — or inability to use — the app.</p>
+    <p>We are not responsible for any decisions made based on content within the app, including decisions related to health or medical care.</p>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <div class="section-number">07</div>
+    <h2>Third-Party Services</h2>
+    <p>Zenna Mind uses Firebase (Google LLC) for authentication and data storage. Your use of the app is also subject to Google's Terms of Service. We are not responsible for the practices of third-party services integrated into the app.</p>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <div class="section-number">08</div>
+    <h2>Changes to These Terms</h2>
+    <p>We may update these Terms of Use from time to time. When we do, we will revise the "Last Updated" date at the top of this page. Continued use of the app after any changes constitutes your acceptance of the updated terms.</p>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <div class="section-number">09</div>
+    <h2>Governing Law</h2>
+    <p>These Terms of Use are governed by the laws of Vietnam. Any disputes arising from the use of this app shall be subject to the jurisdiction of the competent courts of Vietnam.</p>
+  </section>
+
+  <hr />
+
+  <div class="contact-box">
+    <div class="section-number" style="color:rgba(255,255,255,0.5);">Contact</div>
+    <h2>Questions?</h2>
+    <p>If you have any questions about these Terms of Use, please contact us at:</p>
+    <p style="margin-top:12px;"><a href="mailto:zennamind.app@gmail.com">zennamind.app@gmail.com</a></p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Zenna Mind. All rights reserved.
+</footer>
+
+</body>
+</html>
