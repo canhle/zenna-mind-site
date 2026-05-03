@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Zenna Mind</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green-deep: #1f8a82;
+      --green-mid: #2AADA4;
+      --green-light: #e6f7f6;
+      --cream: #f6fafa;
+      --ink: #1a1a1a;
+      --ink-soft: #4a4a4a;
+      --ink-muted: #888;
+      --border: #c8e8e6;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.75;
+    }
+
+    /* Header */
+    header {
+      background: var(--green-deep);
+      padding: 56px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 60% 0%, rgba(42,173,164,0.4) 0%, transparent 70%);
+    }
+
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.08em;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #fff;
+      font-weight: 400;
+      position: relative;
+    }
+
+    header h1 em {
+      font-style: italic;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .meta {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.04em;
+      position: relative;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    /* Intro box */
+    .intro {
+      background: var(--green-light);
+      border-left: 3px solid var(--green-deep);
+      border-radius: 4px;
+      padding: 24px 28px;
+      margin-bottom: 56px;
+      font-size: 0.97rem;
+      color: var(--ink-soft);
+    }
+
+    /* Section */
+    section {
+      margin-bottom: 52px;
+    }
+
+    .section-number {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      color: var(--green-mid);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.45rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 0.97rem;
+      color: var(--ink-soft);
+      margin-bottom: 14px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    /* Data table */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    .data-table th {
+      background: var(--green-deep);
+      color: #fff;
+      text-align: left;
+      padding: 10px 16px;
+      font-weight: 500;
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .data-table th:first-child { border-radius: 4px 0 0 0; }
+    .data-table th:last-child { border-radius: 0 4px 0 0; }
+
+    .data-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--ink-soft);
+      vertical-align: top;
+    }
+
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:nth-child(even) td { background: var(--green-light); }
+
+    .tag {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--green-deep);
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 2px 8px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+    }
+
+    /* List */
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin: 12px 0;
+    }
+
+    ul li {
+      font-size: 0.97rem;
+      color: var(--ink-soft);
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--green-mid);
+      font-size: 0.85rem;
+    }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 52px 0;
+    }
+
+    /* Contact box */
+    .contact-box {
+      background: var(--green-deep);
+      border-radius: 8px;
+      padding: 32px 36px;
+      color: #fff;
+    }
+
+    .contact-box h2 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+    }
+
+    .contact-box a {
+      color: #fff;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.8rem;
+      color: var(--ink-muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Zenna Mind</div>
+  <h1>Privacy <em>Policy</em></h1>
+  <p class="meta">Effective Date: May 3, 2025 &nbsp;·&nbsp; Last Updated: May 3, 2025</p>
+</header>
+
+<div class="container">
+
+  <div class="intro">
+    Zenna Mind ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data when you use the Zenna Mind mobile application.
+  </div>
+
+  <!-- 1 -->
+  <section>
+    <div class="section-number">01</div>
+    <h2>Who This Policy Applies To</h2>
+    <p>Zenna Mind is intended for users aged <strong>13 and older</strong>. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal data, please contact us and we will delete it promptly.</p>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <div class="section-number">02</div>
+    <h2>Information We Collect</h2>
+    <p>We collect only what is necessary to provide the app experience. Below is a summary of the data we store:</p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>When Collected</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Anonymous user ID (UID)</td>
+          <td>On first app launch</td>
+          <td><span class="tag">Auto</span></td>
+        </tr>
+        <tr>
+          <td>Email address</td>
+          <td>Only if you create an account <em style="color:var(--ink-muted);font-size:0.82rem;">(not available in current version)</em></td>
+          <td><span class="tag">Optional</span></td>
+        </tr>
+        <tr>
+          <td>Display name</td>
+          <td>Only if you create an account <em style="color:var(--ink-muted);font-size:0.82rem;">(not available in current version)</em></td>
+          <td><span class="tag">Optional</span></td>
+        </tr>
+        <tr>
+          <td>Profile photo URL</td>
+          <td>Only if you sign in with Google or Apple <em style="color:var(--ink-muted);font-size:0.82rem;">(not available in current version)</em></td>
+          <td><span class="tag">Optional</span></td>
+        </tr>
+        <tr>
+          <td>Meditation session history</td>
+          <td>When you complete a session</td>
+          <td><span class="tag">Usage</span></td>
+        </tr>
+        <tr>
+          <td>Streak & statistics</td>
+          <td>When you complete a session</td>
+          <td><span class="tag">Usage</span></td>
+        </tr>
+        <tr>
+          <td>Favorite sessions</td>
+          <td>When you bookmark a session <em style="color:var(--ink-muted);font-size:0.82rem;">(not available in current version)</em></td>
+          <td><span class="tag">Usage</span></td>
+        </tr>
+        <tr>
+          <td>App settings & preferences</td>
+          <td>When you change settings</td>
+          <td><span class="tag">Usage</span></td>
+        </tr>
+        <tr>
+          <td>Last active timestamp</td>
+          <td>Each time you open the app</td>
+          <td><span class="tag">Auto</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>We do <strong>not</strong> collect location data, contacts, camera access, or any data unrelated to your meditation practice.</p>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <div class="section-number">03</div>
+    <h2>How We Use Your Information</h2>
+    <ul>
+      <li>To provide and personalize your meditation experience</li>
+      <li>To track your streak and progress over time</li>
+      <li>To save your favorite sessions and preferences <em style="color:var(--ink-muted);font-size:0.9em;">(favorites not available in current version)</em></li>
+      <li>To send optional meditation reminders (only if you enable notifications)</li>
+      <li>To maintain your account if you choose to create one <em style="color:var(--ink-muted);font-size:0.9em;">(not available in current version)</em></li>
+    </ul>
+    <p style="margin-top:16px;">We do <strong>not</strong> sell your data. We do not use your data for advertising.</p>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <div class="section-number">04</div>
+    <h2>Anonymous Usage</h2>
+    <p>You can use Zenna Mind without creating an account. When you first open the app, an anonymous session is created automatically using Firebase Authentication. No personal information is required.</p>
+    <p>Account creation (email, Google, Apple sign-in) is not available in the current version and may be introduced in a future update. If implemented, your existing anonymous data (history, streak) will be preserved and linked to your new account.</p>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <div class="section-number">05</div>
+    <h2>Third-Party Services</h2>
+    <p>Zenna Mind uses the following Google Firebase services to operate:</p>
+    <ul>
+      <li><strong>Firebase Authentication</strong> — manages anonymous user sessions. Google, Apple, and email sign-in are not available in the current version</li>
+      <li><strong>Cloud Firestore</strong> — stores your profile, history, streak, and preferences</li>
+      <li><strong>Firebase Storage</strong> — hosts audio files and session images</li>
+    </ul>
+    <p style="margin-top:16px;">Firebase is operated by Google LLC. Data may be stored on Google's servers. For more information, see <a href="https://firebase.google.com/support/privacy" target="_blank" style="color: var(--green-deep); font-weight:500;">Google's Privacy Policy</a>.</p>
+    <p>We do not use any other third-party analytics, advertising, or tracking services.</p>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <div class="section-number">06</div>
+    <h2>Sign-In with Apple & Google</h2>
+    <p>Sign-in with Apple or Google is not available in the current version of the app. If introduced in a future update, we would receive basic profile information (name, email, profile photo) from those providers solely to create and identify your account. We would not store your Apple or Google password.</p>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <div class="section-number">07</div>
+    <h2>Data Retention</h2>
+    <p>We retain your data for as long as your app data is active. If you delete your app data, your personal data (history, streak, preferences) is permanently deleted from our systems within 30 days.</p>
+    <p>Session history records are kept in an anonymized form to preserve the integrity of completed entries. Audio and thumbnail files hosted on Firebase Storage are not personal data and are retained independently.</p>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <div class="section-number">08</div>
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your account and associated data</li>
+      <li>Withdraw consent at any time by deleting your account</li>
+    </ul>
+    <p style="margin-top:16px;">You can delete your account directly within the app, or by contacting us at the email below.</p>
+  </section>
+
+  <!-- 9 -->
+  <section>
+    <div class="section-number">09</div>
+    <h2>Data Security</h2>
+    <p>We take reasonable measures to protect your information. Access to user data in Firestore is restricted by Security Rules — users can only read and write their own data. Master content (sessions, categories, moods) is read-only for all users.</p>
+    <p>However, no method of transmission or storage is 100% secure. We encourage you to keep your device secure.</p>
+  </section>
+
+  <!-- 10 -->
+  <section>
+    <div class="section-number">10</div>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last Updated" date at the top of this page. We encourage you to review this page periodically. Continued use of the app after changes constitutes your acceptance of the updated policy.</p>
+  </section>
+
+  <hr />
+
+  <div class="contact-box">
+    <div class="section-number" style="color:rgba(255,255,255,0.5);">Contact</div>
+    <h2>Questions or Requests?</h2>
+    <p>If you have any questions about this Privacy Policy or wish to exercise your data rights, please contact us at:</p>
+    <p style="margin-top:12px;"><a href="mailto:zennamind.app@gmail.com">zennamind.app@gmail.com</a></p>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Zenna Mind. All rights reserved.
+</footer>
+
+</body>
+</html>
