@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Xoá tài khoản – Zenna Mind</title>
+  <meta name="description" content="Cách yêu cầu xoá tài khoản và dữ liệu Zenna Mind / How to request deletion of your Zenna Mind account and data.">
+  <style>
+    :root {
+      --bg: #f6f8f7;
+      --card: #ffffff;
+      --text: #1d2a27;
+      --muted: #5b6b67;
+      --primary: #2f7d73;
+      --primary-soft: #e3f1ee;
+      --border: #dfe7e5;
+      --danger: #b3261e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111716;
+        --card: #1a2321;
+        --text: #e4ece9;
+        --muted: #9fb0ab;
+        --primary: #7cc9bc;
+        --primary-soft: #1f3330;
+        --border: #2a3633;
+        --danger: #f2b8b5;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 32px 16px 48px; }
+    header { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .brand { font-weight: 700; color: var(--primary); font-size: 18px; }
+    .lang { display: flex; gap: 4px; }
+    .lang button {
+      border: 1px solid var(--border); background: var(--card); color: var(--muted);
+      padding: 4px 12px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 14px;
+    }
+    .lang button[aria-pressed="true"] { background: var(--primary); border-color: var(--primary); color: var(--card); }
+    h1 { font-size: 28px; line-height: 1.25; margin: 24px 0 8px; }
+    h2 { font-size: 19px; margin: 0 0 8px; }
+    p { margin: 0 0 12px; }
+    .lead { color: var(--muted); margin-bottom: 24px; }
+    section {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 20px; margin-bottom: 16px;
+    }
+    ol, ul { margin: 0 0 12px; padding-left: 22px; }
+    li { margin-bottom: 4px; }
+    .badge {
+      display: inline-block; background: var(--primary-soft); color: var(--primary);
+      font-size: 13px; font-weight: 600; padding: 2px 10px; border-radius: 999px; margin-bottom: 8px;
+    }
+    .btn {
+      display: inline-block; background: var(--primary); color: var(--card);
+      text-decoration: none; font-weight: 600; padding: 10px 18px; border-radius: 12px; margin-top: 4px;
+    }
+    .note { font-size: 14px; color: var(--muted); }
+    .warn { color: var(--danger); font-weight: 500; }
+    code {
+      background: var(--primary-soft); padding: 1px 6px; border-radius: 6px;
+      font-size: 14px; word-break: break-all;
+    }
+    a { color: var(--primary); }
+    footer { text-align: center; font-size: 14px; color: var(--muted); margin-top: 32px; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">Zenna Mind</div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="vi" aria-pressed="true">Tiếng Việt</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <!-- ───────────── Tiếng Việt ───────────── -->
+  <div data-content="vi">
+    <h1>Xoá tài khoản Zenna Mind</h1>
+    <p class="lead">Trang này hướng dẫn cách xoá tài khoản và toàn bộ dữ liệu của bạn trong ứng dụng Zenna Mind (Android &amp; iOS).</p>
+
+    <section>
+      <span class="badge">Cách 1 · Nhanh nhất</span>
+      <h2>Xoá ngay trong ứng dụng</h2>
+      <ol>
+        <li>Mở ứng dụng Zenna Mind.</li>
+        <li>Vào tab <strong>Cài đặt</strong>.</li>
+        <li>Chọn <strong>Xoá tài khoản</strong> và xác nhận.</li>
+      </ol>
+      <p>Tài khoản và dữ liệu bị xoá ngay lập tức.</p>
+    </section>
+
+    <section>
+      <span class="badge">Cách 2 · Khi không còn dùng ứng dụng</span>
+      <h2>Gửi yêu cầu qua email</h2>
+      <p>Zenna Mind không yêu cầu email hay mật khẩu khi đăng ký, nên chúng tôi nhận diện tài khoản của bạn bằng <strong>ID tài khoản</strong>.</p>
+      <ol>
+        <li>Lấy ID tài khoản: trong ứng dụng, vào <strong>Cài đặt → ID tài khoản</strong> và chạm để sao chép.</li>
+        <li>Gửi email tới <a href="mailto:zennamind.app@gmail.com">zennamind.app@gmail.com</a> với tiêu đề <code>Yêu cầu xoá tài khoản</code>, kèm ID tài khoản trong nội dung.</li>
+      </ol>
+      <a class="btn" href="mailto:zennamind.app@gmail.com?subject=Y%C3%AAu%20c%E1%BA%A7u%20xo%C3%A1%20t%C3%A0i%20kho%E1%BA%A3n%20Zenna%20Mind&amp;body=ID%20t%C3%A0i%20kho%E1%BA%A3n%3A%20">Soạn email yêu cầu xoá</a>
+      <p class="note" style="margin-top:12px">Chúng tôi xử lý yêu cầu trong vòng <strong>30 ngày</strong> và trả lời email khi đã xoá xong.</p>
+      <p class="note warn">Nếu bạn đã gỡ ứng dụng và không lưu lại ID tài khoản, chúng tôi không thể xác định dữ liệu nào là của bạn. Dữ liệu này không gắn với tên thật, email hay số điện thoại của bạn.</p>
+    </section>
+
+    <section>
+      <h2>Dữ liệu bị xoá</h2>
+      <ul>
+        <li>Tài khoản đăng nhập (Firebase Authentication)</li>
+        <li>Hồ sơ: tên hiển thị và cài đặt (giờ nhắc nhở…)</li>
+        <li>Lịch sử các buổi thiền</li>
+        <li>Chuỗi ngày thiền (streak) và thống kê</li>
+        <li>Danh sách bài yêu thích</li>
+      </ul>
+      <p>Toàn bộ dữ liệu trên bị xoá vĩnh viễn và không thể khôi phục. Chúng tôi <strong>không giữ lại</strong> bất kỳ dữ liệu cá nhân nào sau khi xoá.</p>
+    </section>
+
+    <p class="note">Xem thêm <a href="privacy-policy.html">Chính sách bảo mật</a>.</p>
+  </div>
+
+  <!-- ───────────── English ───────────── -->
+  <div data-content="en" hidden>
+    <h1>Delete your Zenna Mind account</h1>
+    <p class="lead">This page explains how to delete your account and all associated data in the Zenna Mind app (Android &amp; iOS).</p>
+
+    <section>
+      <span class="badge">Option 1 · Fastest</span>
+      <h2>Delete in the app</h2>
+      <ol>
+        <li>Open the Zenna Mind app.</li>
+        <li>Go to the <strong>Settings</strong> tab.</li>
+        <li>Tap <strong>Delete account</strong> and confirm.</li>
+      </ol>
+      <p>Your account and data are deleted immediately.</p>
+    </section>
+
+    <section>
+      <span class="badge">Option 2 · If you no longer use the app</span>
+      <h2>Request deletion by email</h2>
+      <p>Zenna Mind does not ask for an email or password at sign-up, so we identify your account by its <strong>Account ID</strong>.</p>
+      <ol>
+        <li>Get your Account ID: in the app, go to <strong>Settings → Account ID</strong> and tap to copy it.</li>
+        <li>Email <a href="mailto:zennamind.app@gmail.com">zennamind.app@gmail.com</a> with the subject <code>Account deletion request</code> and include your Account ID in the message.</li>
+      </ol>
+      <a class="btn" href="mailto:zennamind.app@gmail.com?subject=Zenna%20Mind%20account%20deletion%20request&amp;body=Account%20ID%3A%20">Compose deletion email</a>
+      <p class="note" style="margin-top:12px">We process requests within <strong>30 days</strong> and reply once the deletion is complete.</p>
+      <p class="note warn">If you uninstalled the app without saving your Account ID, we cannot tell which data is yours. That data is not linked to your real name, email address or phone number.</p>
+    </section>
+
+    <section>
+      <h2>What gets deleted</h2>
+      <ul>
+        <li>Your sign-in account (Firebase Authentication)</li>
+        <li>Profile: display name and settings (reminder time, etc.)</li>
+        <li>Meditation session history</li>
+        <li>Meditation streaks and statistics</li>
+        <li>Favorite sessions</li>
+      </ul>
+      <p>All of the above is permanently deleted and cannot be recovered. We do <strong>not retain</strong> any personal data after deletion.</p>
+    </section>
+
+    <p class="note">See also our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+  </div>
+
+  <footer>© Zenna Mind</footer>
+</main>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('[data-lang]');
+    var blocks = document.querySelectorAll('[data-content]');
+    var titles = { vi: 'Xoá tài khoản – Zenna Mind', en: 'Delete account – Zenna Mind' };
+
+    function show(lang) {
+      blocks.forEach(function (b) { b.hidden = b.dataset.content !== lang; });
+      buttons.forEach(function (btn) { btn.setAttribute('aria-pressed', String(btn.dataset.lang === lang)); });
+      document.documentElement.lang = lang;
+      document.title = titles[lang];
+    }
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () { show(btn.dataset.lang); });
+    });
+
+    // ?lang=en, otherwise follow the browser language.
+    var param = new URLSearchParams(location.search).get('lang');
+    var browser = (navigator.language || 'vi').slice(0, 2);
+    show(param === 'en' || param === 'vi' ? param : (browser === 'vi' ? 'vi' : 'en'));
+  })();
+</script>
+</body>
+</html>
